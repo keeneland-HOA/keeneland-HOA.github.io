@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Landing Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Basic Styling */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('file:///Users/steve/Desktop/keeneland.jpeg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        .cta-btn {
+            margin-top: 20px;
+            padding: 10px 30px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        .cta-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-box {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .feature img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .feature h3 {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .feature-box {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Keeneland Trails HOA</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Common Area Maintenance</a></li>
+                <li><a href="#features">Neighbor Bashing</a></li>
+                <li><a href="#contact">HOA Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div>
+            
+  
+            <!— <button class="cta-btn"> <!—Get Started</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Features</h2>
+        <div class="feature-box">
+            <div class="feature">
+                <img src="file:///Users/steve/Desktop/brokenmower.jpeg" alt="Feature 1">
+                <h3>Common Area Maintenance</h3>
+                <p>Is it your turn to mow? Look here for the schedule or to volunteer.</p>
+            </div>
+            <div class="feature">
+                <img src="file:///Users/steve/Desktop/hoanews.jpeg" alt="Feature 2">
+                <h3>What’s the latest HOA news?</h3>
+                <p>Check here, or just call David!.</p>
+            </div>
+            <div class="feature">
+                <img src="file:///Users/steve/Desktop/keenelandtrailscalendar.jpeg" alt="Feature 3">
+                <h3>What’s on the Community Calendar?</h3>
+                <p>Just Kidding</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Keeneland-Trails.org | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
